@@ -1,1 +1,1 @@
-web: gunicorn fitnessclub.wsgi
+web: waitress-serve --port=$PORT fitness.wsgi:application
